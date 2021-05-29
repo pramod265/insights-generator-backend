@@ -82,4 +82,6 @@ def generate_report():
 print('Starting Flask!')
 
 app.debug=True
-app.run(host='0.0.0.0')
+# app.run(host='0.0.0.0')
+app.run(host='https://insights-generator-api.herokuapp.com/')
+
