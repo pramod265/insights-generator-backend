@@ -79,10 +79,10 @@ def generate_report():
     response.headers['my-custom-header'] = 'my-custom-status-0'
     return response
 
-print('Starting Flask!')
+# print('Starting Flask!')
 
-if __name__ == '__main__':
-    # app.debug=True
-    # app.run(host='0.0.0.0')
-    # app.run(host='https://insights-generator-api.herokuapp.com/')
-    app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
+# if __name__ == '__main__':
+#     # app.debug=True
+#     # app.run(host='0.0.0.0')
+#     # app.run(host='https://insights-generator-api.herokuapp.com/')
+#     app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
