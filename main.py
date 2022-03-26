@@ -82,7 +82,7 @@ def generate_report():
 # print('Starting Flask!')
 
 # if __name__ == '__main__':
-#     # app.debug=True
-#     # app.run(host='0.0.0.0')
+#     app.debug=True
+#     app.run()
 #     # app.run(host='https://insights-generator-api.herokuapp.com/')
-#     app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
+#     # app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
