@@ -3,6 +3,7 @@ from flask import Flask, request, abort, jsonify, send_from_directory
 import datetime
 import pandas as pd
 from pandas_profiling import ProfileReport
+import pip
 
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -81,8 +82,13 @@ def generate_report():
 
 # print('Starting Flask!')
 
-# if __name__ == '__main__':
-#     app.debug=True
-#     app.run()
-#     # app.run(host='https://insights-generator-api.herokuapp.com/')
-#     # app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
+if __name__ == '__main__':
+    if hasattr(pip, 'main'):
+        pip.main(['install', 'pandas-profiling'])
+    else:
+        pip._internal.main(['install', 'pandas-profiling'])
+    
+    # app.debug=True
+    app.run(debug=True)
+    # app.run(host='https://insights-generator-api.herokuapp.com/')
+    # app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
