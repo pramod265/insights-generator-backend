@@ -83,12 +83,12 @@ def generate_report():
 # print('Starting Flask!')
 
 if __name__ == '__main__':
-    if hasattr(pip, 'main'):
-        pip.main(['install', 'pandas-profiling'])
-    else:
-        pip._internal.main(['install', 'pandas-profiling'])
+    # if hasattr(pip, 'main'):
+    #     pip.main(['install', 'pandas-profiling'])
+    # else:
+    #     pip._internal.main(['install', 'pandas-profiling'])
     
-    # app.debug=True
-    app.run(debug=True)
+    app.debug=True
+    app.run()
     # app.run(host='https://insights-generator-api.herokuapp.com/')
     # app.run(debug=True, host='https://insights-generator-api.herokuapp.com')
