@@ -8,7 +8,7 @@ if __name__ == "__main__":
     else:
         pip._internal.main(['install', 'pandas-profiling'])
     
-    app.debug=True
+    # app.debug=True
     app.run()
 
 
